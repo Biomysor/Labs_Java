@@ -1,7 +1,7 @@
 public class Lab2 {
     public static void main(String[] args) throws Exception {
         
-        System.out.println("Лабараторная работа №2 з Java\n Виконавець: Чулiй Михайло\n Варiант №24\n");
+        System.out.println("Лабораторна робота №2 з Java\n Виконавець: Чулiй Михайло\n Варiант №24\n");
         StringWorker stringWorker = new StringWorker("Андрій Іван Олег Євгенія Уляна Ірина Оксана Анна");
         stringWorker.vowelsStringBuilder();
     }
