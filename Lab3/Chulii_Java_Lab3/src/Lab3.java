@@ -43,12 +43,14 @@ public class Lab3 {
 }
 
 class Plane{
+    // поля літака (модель, швидкість, рік випуску, дальність польоту, пасажиромісткість)
     String model;
     int speed;
     int year;
     int range;
     int capacity; 
 
+    // конструктор класу Plane проініціалізовуємо поля
     public Plane(String model, int speed, int year, int range, int capacity) {
         this.model = model;
         this.speed = speed;
@@ -57,6 +59,7 @@ class Plane{
         this.capacity = capacity;
     }
 
+    // методи доступу до наших полів (get та set)
     public String getModel() {
         return model;
     }
@@ -88,6 +91,7 @@ class Plane{
         this.capacity = capacity;
     }
 
+    // метод створення тестового масиву літаків
     public static Plane[] createPlaneArray() {
         Plane[] planes = new Plane[3];
         planes[0] = new Plane("Boeing 737", 876, 2015, 5600, 189);
@@ -95,7 +99,9 @@ class Plane{
         planes[2] = new Plane("Cessna 172", 226, 2000, 1289, 4);
         return planes;
     }
-
+ 
+    /* Сортує масив літаків за швидкістю (зростанням)
+     і пасажиромісткістю (спаданням).*/
     public static void sortPlanes(Plane[] planes) {
         Arrays.sort(planes, Comparator
                 .comparingInt(Plane::getSpeed)
@@ -103,6 +109,7 @@ class Plane{
         );
     }
 
+    // метод який перевіряє ідентичність двох літаків
        @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
@@ -115,6 +122,7 @@ class Plane{
                 && model.equals(other.model);
     }
 
+    // повертає рядкове представлення літака
         @Override
     public String toString() {
         return String.format("Plane{model='%s', speed=%d, year=%d, range=%d, capacity=%d}",
