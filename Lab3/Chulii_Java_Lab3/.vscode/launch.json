@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Lab3",
+            "request": "launch",
+            "mainClass": "Lab3",
+            "projectName": "Chulii_Java_Lab3_34d06c81"
+        },
+        {
+            "command": "npm start",
+            "name": "Run npm start",
+            "request": "launch",
+            "type": "node-terminal"
+        }
+    ]
+}
