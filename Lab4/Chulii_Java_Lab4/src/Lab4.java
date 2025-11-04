@@ -4,8 +4,13 @@ public class Lab4 {
 
         System.out.println("Лабораторна робота №4 з Java\n Виконавець: Чулiй Михайло\n Варiант №24\n");
 
-        Text text = new Text("Андрій Іван Олег Євгенія Уляна Ірина Оксана Анна. Я вчора ходив у зал, там зустрів Антона та Аанга.");
-        text.vowelsStringBuilder();
+        try{
+            Text text = new Text("Андрій Іван Олег Євгенія Уляна Ірина Оксана Анна. Я вчора ходив у зал, там зустрів Антона та Аанга.");
+            text.vowelsStringBuilder();
+        }
+        catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
     }
 }
 
