@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Lab6",
+            "request": "launch",
+            "mainClass": "Lab6",
+            "projectName": "Java_Labs_ed4c0f89"
+        },
+        {
+            "command": "npm start",
+            "name": "Run npm start",
+            "request": "launch",
+            "type": "node-terminal"
+        }
+    ]
+}
